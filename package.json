@@ -11,13 +11,11 @@
   ],
   "scripts": {
     "ng": "ng",
-    "start": "node server.ts",
+    "start": "node server.js",
     "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "npm run build:prod",
-    "heroku-postbuild": "npm run build:prod"
+    "e2e": "ng e2e"
   },
   "engines": {
     "node": "10.13.0",
