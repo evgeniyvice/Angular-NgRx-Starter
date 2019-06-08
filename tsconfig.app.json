@@ -2,7 +2,13 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": [
+      "bluebird-global",
+      "node",
+      "reflect-metadata",
+    ]
   },
   "include": [
     "src/**/*.ts"
