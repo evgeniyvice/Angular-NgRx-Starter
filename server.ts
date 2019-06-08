@@ -1,8 +1,6 @@
-import { join } from 'path'
-
 // Install express server
-import express from 'express'
-import path from 'path'
+const express = require('express')
+const path = require('path')
 
 const app = express()
 
@@ -18,5 +16,5 @@ app.get('/*', function (req, res) {
 
 // Start the app by listening on the default Heroku port
 app.listen(PORT, () => {
-    console.log(`Node Express server listening on http://localhost:${PORT}`);
+    console.log(`Node Express server listening on http://localhost:${PORT}`)
 })
