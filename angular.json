@@ -123,5 +123,31 @@
   "defaultProject": "angular-ngrx-starter",
   "cli": {
     "defaultCollection": "@ngrx/schematics"
+  },
+  "schematics": {
+    "@ngrx/schematics:class": {
+      "spec": false
+    },
+    "@ngrx/schematics:component": {
+      "spec": false,
+      "prefix": "app",
+      "styleext": "scss"
+    },
+    "@ngrx/schematics:directive": {
+      "spec": false,
+      "prefix": "app"
+    },
+    "@ngrx/schematics:guard": {
+      "spec": false
+    },
+    "@ngrx/schematics:module": {
+      "spec": false
+    },
+    "@ngrx/schematics:pipe": {
+      "spec": false
+    },
+    "@ngrx/schematics:service": {
+      "spec": false
+    }
   }
 }
