@@ -12,9 +12,11 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
+    "prebuild:prod": "npm run lint",
     "build:prod": "ng build --prod",
     "test": "ng test",
-    "lint": "ng lint",
+    "lint": "ng lint && npm run eslint",
+    "eslint": "eslint \"src/**/*.ts\" -c \".eslintrc.prebuild.json\" --no-inline-config",
     "e2e": "ng e2e"
   },
   "engines": {

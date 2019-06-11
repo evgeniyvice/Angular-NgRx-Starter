@@ -1,0 +1,6 @@
+{
+  "extends": ".eslintrc.prebuild.json",
+  "rules": {
+    "no-unused-expressions":"error"
+  }
+}
