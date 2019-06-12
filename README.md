@@ -1,6 +1,7 @@
 # AngularNgrxStarter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+It is lightweight and easy to use starter, with which you can begin to develop your application.
 
 ## Development server
 
