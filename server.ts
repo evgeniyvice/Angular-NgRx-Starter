@@ -1,8 +1,9 @@
 // Install express server
-const express = require('express')
-const path = require('path')
+import express = require('express')
+import { Application } from 'express'
+import path = require('path')
 
-const app = express()
+const app: Application = express()
 
 const PORT = process.env.PORT || 4000
 
