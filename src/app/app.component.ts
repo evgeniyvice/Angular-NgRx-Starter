@@ -13,10 +13,10 @@ export class AppComponent implements OnDestroy {
   constructor(
     private store: Store<RootState>
   ) {
-    this.store.dispatch(new rootActions.LoadRoots())
+    this.store.dispatch(rootActions.initRoots())
   }
 
   public ngOnDestroy(): void {
-    this.store.dispatch(new rootActions.DestroyRoots())
+    this.store.dispatch(rootActions.destroyRoots())
   }
 }

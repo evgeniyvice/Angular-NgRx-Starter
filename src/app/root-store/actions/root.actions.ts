@@ -1,18 +1,18 @@
-import { Action } from '@ngrx/store'
+import { createAction, props } from '@ngrx/store'
 
-export enum RootActionTypes {
-  LoadRoots = '[Root] Load Roots',
-  DestroyRoots = '[Root] Destroy Roots'
-}
+export const checkToken = createAction(
+  '[Root] Check Token'
+)
 
-export class LoadRoots implements Action {
-  readonly type = RootActionTypes.LoadRoots
-}
+export const writeToken = createAction(
+  '[Root] Write Token',
+  props<{ access_token: string }>()
+)
 
-export class DestroyRoots implements Action {
-  readonly type = RootActionTypes.DestroyRoots
-}
+export const initRoots = createAction(
+  '[Root] Init Roots',
+)
 
-export type RootActions =
-  | LoadRoots
-  | DestroyRoots
+export const destroyRoots = createAction(
+  '[Root] Destroy Roots'
+)
