@@ -79,7 +79,6 @@
     "no-trailing-whitespace": true,
     "no-unnecessary-initializer": true,
     "no-unused-expression": true,
-    "no-use-before-declare": true,
     "no-var-keyword": true,
     "object-literal-sort-keys": false,
     "one-line": [
@@ -147,7 +146,6 @@
     "directive-class-suffix": true,
     "await-promise": [true, "Bluebird"],
     "ordered-imports": { "severity": "warn" },
-    "no-unbound-method": { "severity": "warn" },
     "no-var-requires": true
   }
 }

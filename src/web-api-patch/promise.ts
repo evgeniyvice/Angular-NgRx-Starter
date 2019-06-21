@@ -5,7 +5,6 @@
  */
 import Bluebird from 'bluebird'
 
-// tslint:disable:no-unbound-method
 const oldThen = Bluebird.prototype.then
 
 Bluebird.prototype.then = function(onFulfilled: unknown, onRejected: unknown) {
