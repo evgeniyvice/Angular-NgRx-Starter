@@ -1,4 +1,5 @@
 import { createSelector } from '@ngrx/store'
+
 import { RootState } from '../reducers/index'
 
 export const getRouter = (state: RootState) => state.router

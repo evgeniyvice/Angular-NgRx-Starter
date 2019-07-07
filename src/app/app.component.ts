@@ -1,5 +1,6 @@
 import { Component, OnDestroy } from '@angular/core'
 import { Store } from '@ngrx/store'
+
 import * as rootActions from './root-store/actions/index'
 import { RootState } from './root-store/reducers/index'
 

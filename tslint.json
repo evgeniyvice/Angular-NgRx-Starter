@@ -145,7 +145,10 @@
     "component-class-suffix": true,
     "directive-class-suffix": true,
     "await-promise": [true, "Bluebird"],
-    "ordered-imports": { "severity": "warn" },
+
+    "// moved to ESLint `simple-import-sort/sort` rule": null,
+    "ordered-imports": false,
+
     "no-var-requires": true
   }
 }

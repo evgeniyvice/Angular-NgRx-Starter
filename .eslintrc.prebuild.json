@@ -6,7 +6,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
   "rules": {
     "max-lines": ["error", {
       "max": 300,
@@ -30,6 +30,8 @@
 
     "@typescript-eslint/no-use-before-define": ["error", {"functions": false}],
     "@typescript-eslint/unbound-method": "warn",
+
+    "simple-import-sort/sort": "error",
 
     "// next block used for compatibility with TypeScript": null,
     "no-undef": "off",

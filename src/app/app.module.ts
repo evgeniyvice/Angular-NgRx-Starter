@@ -5,14 +5,13 @@ import { EffectsModule } from '@ngrx/effects'
 import { StoreRouterConnectingModule } from '@ngrx/router-store'
 import { StoreModule } from '@ngrx/store'
 import { StoreDevtoolsModule } from '@ngrx/store-devtools'
-import { environment } from '../environments/environment'
 
+import { environment } from '../environments/environment'
+import { AppComponent } from './app.component'
 import { AppRouting } from './app.routing'
 import { MaterialModule } from './material/material.module'
 import { RootEffects } from './root-store/effects/index'
 import { metaReducers, reducers } from './root-store/reducers/index'
-
-import { AppComponent } from './app.component'
 import { HomeComponent } from './views/home/home.component'
 
 @NgModule({
