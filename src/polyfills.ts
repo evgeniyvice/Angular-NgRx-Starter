@@ -2,7 +2,6 @@ import './polyfills/polyfills-array'
 import './polyfills/polyfills-object'
 import './polyfills/polyfills-url'
 /** Evergreen browsers require these. **/
-
 import 'core-js/proposals/reflect-metadata'
 /***************************************************************************************************
  * Zone JS is required by Angular itself.

@@ -79,7 +79,6 @@
     "no-trailing-whitespace": true,
     "no-unnecessary-initializer": true,
     "no-unused-expression": true,
-    "no-use-before-declare": true,
     "no-var-keyword": true,
     "object-literal-sort-keys": false,
     "one-line": [
@@ -146,8 +145,10 @@
     "component-class-suffix": true,
     "directive-class-suffix": true,
     "await-promise": [true, "Bluebird"],
-    "ordered-imports": { "severity": "warn" },
-    "no-unbound-method": { "severity": "warn" },
+
+    "// moved to ESLint `simple-import-sort/sort` rule": null,
+    "ordered-imports": false,
+
     "no-var-requires": true
   }
 }

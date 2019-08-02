@@ -1,5 +1,4 @@
 import './polyfills-object'
-
 import './polyfills-array'
 
 // see https://github.com/troyanskiy/ngx-resource-core/issues/18

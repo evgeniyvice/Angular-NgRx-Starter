@@ -6,6 +6,7 @@ import { Observable } from 'rxjs/internal/Observable'
 import { defer } from 'rxjs/internal/observable/defer'
 import { mergeMap } from 'rxjs/internal/operators/mergeMap'
 import { tap } from 'rxjs/internal/operators/tap'
+
 import { checkToken, writeToken } from '../actions'
 import { RootState } from '../reducers'
 
