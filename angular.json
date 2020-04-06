@@ -126,28 +126,28 @@
   },
   "schematics": {
     "@ngrx/schematics:class": {
-      "spec": false
+      "spec": true
     },
     "@ngrx/schematics:component": {
-      "spec": false,
+      "spec": true,
       "prefix": "app",
       "styleext": "scss"
     },
     "@ngrx/schematics:directive": {
-      "spec": false,
+      "spec": true,
       "prefix": "app"
     },
     "@ngrx/schematics:guard": {
-      "spec": false
+      "spec": true
     },
     "@ngrx/schematics:module": {
       "spec": false
     },
     "@ngrx/schematics:pipe": {
-      "spec": false
+      "spec": true
     },
     "@ngrx/schematics:service": {
-      "spec": false
+      "spec": true
     }
   }
 }
