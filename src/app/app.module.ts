@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { EffectsModule } from '@ngrx/effects'
-import { DefaultRouterStateSerializer, StoreRouterConnectingModule } from '@ngrx/router-store'
+import { MinimalRouterStateSerializer, StoreRouterConnectingModule } from '@ngrx/router-store'
 import { StoreModule } from '@ngrx/store'
 import { StoreDevtoolsModule } from '@ngrx/store-devtools'
 import { StorageModule } from '@ngx-pwa/local-storage'
@@ -30,7 +30,7 @@ import { HomeComponent } from './views/home/home.component';
     AppRouting,
     // Connects RouterModule with StoreModule
     EffectsModule.forRoot([RootEffects]),
-    StoreRouterConnectingModule.forRoot({ serializer: DefaultRouterStateSerializer }),
+    StoreRouterConnectingModule.forRoot({ serializer: MinimalRouterStateSerializer }),
     MaterialModule,
     StorageModule.forRoot({ IDBNoWrap: false })
   ],

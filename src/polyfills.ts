@@ -4,7 +4,7 @@ import './polyfills/polyfills-url'
 /** Evergreen browsers require these. **/
 
 import 'core-js/proposals/reflect-metadata'
-/***************************************************************************************************
+/** *************************************************************************************************
  * Zone JS is required by Angular itself.
  */
 import 'zone.js/dist/zone' // Included with Angular CLI.
@@ -27,7 +27,7 @@ require('keyboardevent-key-polyfill').polyfill()
  * Learn more in https://angular.io/guide/browser-support
  */
 
-/***************************************************************************************************
+/** *************************************************************************************************
  * BROWSER POLYFILLS
  */
 
@@ -65,12 +65,12 @@ require('keyboardevent-key-polyfill').polyfill()
  *
  */
 
-/***************************************************************************************************
+/** *************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
 import 'zone.js/dist/zone';  // Included with Angular CLI.
 
 
-/***************************************************************************************************
+/** *************************************************************************************************
  * APPLICATION IMPORTS
  */
