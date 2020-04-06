@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "module": "esnext",
     "plugins": [
       { "name": "typescript-tslint-plugin", "ignoreDefinitionFiles": true }
     ],

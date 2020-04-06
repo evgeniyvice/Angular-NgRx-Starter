@@ -1,13 +1,8 @@
-import { Action } from '@ngrx/store'
-
-export enum ExampleActionTypes {
-  LoadExamples = '[Example] Load Examples',
-}
-
-export class LoadExamples implements Action {
-  readonly type = ExampleActionTypes.LoadExamples
-  constructor(public payload: unknown) { }
-}
+import { createAction, props } from '@ngrx/store'
 
 
-export type ExampleActions = LoadExamples
+export const LoadExamples = createAction(
+  '[Example] Load Examples',
+  props<{ payload: unknown }>()
+)
+

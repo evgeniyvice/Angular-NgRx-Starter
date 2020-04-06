@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/angular-ngrx-starter",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -53,6 +54,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -122,32 +127,33 @@
   },
   "defaultProject": "angular-ngrx-starter",
   "cli": {
-    "defaultCollection": "@ngrx/schematics"
+    "defaultCollection": "@ngrx/schematics",
+    "analytics": false
   },
   "schematics": {
     "@ngrx/schematics:class": {
-      "spec": false
+      "spec": true
     },
     "@ngrx/schematics:component": {
-      "spec": false,
+      "spec": true,
       "prefix": "app",
       "styleext": "scss"
     },
     "@ngrx/schematics:directive": {
-      "spec": false,
+      "spec": true,
       "prefix": "app"
     },
     "@ngrx/schematics:guard": {
-      "spec": false
+      "spec": true
     },
     "@ngrx/schematics:module": {
       "spec": false
     },
     "@ngrx/schematics:pipe": {
-      "spec": false
+      "spec": true
     },
     "@ngrx/schematics:service": {
-      "spec": false
+      "spec": true
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "extends": "eslint:recommended",
-  "parser": "typescript-eslint-parser",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 8,
     "sourceType": "module"
@@ -12,21 +12,8 @@
       "skipComments": true
     }],
     "no-console": "warn",
-    "no-restricted-globals": ["error",
-      {
-        "name": "Headers",
-        "message": "Use \"import { HttpHeaders } from '@angular/common/http'\" instead"
-      }
-    ],
-    "no-restricted-imports": ["error", {
-      "paths": [{
-        "name": "lodash",
-        "message": "Please use \"lodash.merge\", \"lodash.trim\" or \"lodash.last\" instead"
-      }]
-    }],
     "operator-linebreak": "error",
 
-    "// next block used for compatibility with TypeScript": null,
     "no-undef": "off",
     "no-unused-vars": "off"
   }
