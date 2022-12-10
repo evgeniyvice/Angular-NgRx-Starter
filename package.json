@@ -46,7 +46,7 @@
     "@ngx-pwa/local-storage": "^9.0.3",
     "bluebird": "^3.7.2",
     "core-js": "^3.6.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "keyboardevent-key-polyfill": "^1.1.0",
     "ngrx-store-freeze": "^0.2.4",
     "rxjs": "~6.5.5",
